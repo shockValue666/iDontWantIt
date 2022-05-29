@@ -14,7 +14,7 @@ function MintButtonWrapper({children}:any) {
                         {/* <a href="https://placeholder.com"> <img src="https://via.placeholder.com/550" alt="p" /> </a> */}
                         <TypeWritter/>
                         {children}
-                        <p style={{color:"white"}}>poutsa</p>
+                        <p style={{color:"white"}}></p>
                         {/* <MintButton/> */}
                     </Box>
                 </Grid>

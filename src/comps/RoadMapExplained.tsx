@@ -1,8 +1,8 @@
 import { Box,Grid,Container,Typography } from '@mui/material'
 import React from 'react'
-// import PhaseModal from './p1/PhaseModalX'
-// import PhaseModal2 from './p2/PhaseModalX'
-// import PhaseModal3 from './p3/PhaseModalX'
+import PhaseModal from './p1/PhaseModal'
+import PhaseModal2 from './p2/PhaseModal'
+import PhaseModal3 from './p3/PhaseModal'
 
 function RoadMapExplained() {
   return (
@@ -33,7 +33,7 @@ function RoadMapExplained() {
       >
         <Container>
             <Typography variant="h3">
-              {/* <PhaseModal/> */}
+              <PhaseModal/>
             </Typography> 
         </Container>
         </Box>
@@ -52,7 +52,7 @@ function RoadMapExplained() {
       >
         <Container>
             <Typography variant="h3">
-                {/* <PhaseModal2/> */}
+                <PhaseModal2/>
             </Typography> 
         </Container>
         </Box>
@@ -72,7 +72,7 @@ function RoadMapExplained() {
 
         <Container>
             <Typography variant="h3">
-              {/* <PhaseModal3/> */}
+              <PhaseModal3/>
             </Typography> 
         </Container>
       </Box>
