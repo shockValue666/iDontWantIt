@@ -1,5 +1,5 @@
-import { AppBar,Fab,Box, Button, Toolbar,Drawer,ListItemButton,ListItemText,List,ListItem,Divider} from "@mui/material";
-import MenuIcon from '@mui/icons-material/Menu';
+import { AppBar,Box, Button, Toolbar,Drawer,ListItemButton,ListItemText,List,ListItem,Divider} from "@mui/material";
+// import MenuIcon from '@mui/icons-material/Menu';
 import {useState,useEffect} from 'react'
 import {Link} from "react-router-dom"
 import DesktopNavbar from './DesktopNavbar'
@@ -66,10 +66,11 @@ const Navbar = () => {
 
         return(
             <Toolbar>
-                <Button onClick={handleDrawerOpen}>
-                        <Fab color="primary" aria-label="edit">
+                <Button onClick={handleDrawerOpen} style={{textDecoration:"none"}}>
+                        {/* <Fab color="primary" aria-label="edit">
                                 <MenuIcon />
-                        </Fab>
+                        </Fab> */}
+                        menu
                 </Button>
                 <Drawer
                 {...{
@@ -80,8 +81,8 @@ const Navbar = () => {
                 >
                     <List>
                         <ListItem disablePadding>
-                                <ListItemButton>
-                                        <Link to="/" >
+                                <ListItemButton >
+                                        <Link to="/" style={{textDecoration:"none", color:"white"}} >
                                                 <p>
                                                 <ListItemText primary="Home" />
                                                 </p>
@@ -93,7 +94,7 @@ const Navbar = () => {
                         </ListItem>
                         <ListItem disablePadding>
                                 <ListItemButton>
-                                        <Link to="/roadmap" >
+                                        <Link to="/roadmap"  style={{textDecoration:"none", color:"white"}}>
                                                 <ListItemText primary="Roadmap" />
                                         </Link>
                                 </ListItemButton>
