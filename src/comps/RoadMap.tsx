@@ -1,5 +1,6 @@
 import { Typography } from '@material-ui/core'
 import React from 'react'
+import Footer from './Footer'
 import Navbar from './Navbar'
 import RoadMapExplained from './RoadMapExplained'
 
@@ -15,6 +16,7 @@ function RoadMap() {
         our roadmap explained (we need to find something more edgy for the description)
       </Typography>
       <RoadMapExplained/>
+      <Footer/>
       </div>
     </>
   )
