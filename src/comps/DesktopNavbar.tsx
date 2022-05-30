@@ -6,6 +6,9 @@ function DesktopNavbar() {
   return (
     <div style={{color:"white"}}>
       <Toolbar>
+        <Container>
+          <img src="https://ibb.co/nfQxW17" alt="" />
+        </Container>
         <Container maxWidth="xl" style={{display:"flex", justifyContent:"flex-end",gap:"2%"}}>
           <Link to="/" style={{textDecoration:"none"}}>
             <Button variant="contained" size="large" style={{background:"rgba(66, 245, 236,0.1)",color:"white"}}>
@@ -17,7 +20,7 @@ function DesktopNavbar() {
               roadmap 
             </Button>
           </Link>
-          <Button href="https://discord.gg/vKaB2B8v" variant="outlined" size="small" style={{background:"rgba(179, 66, 245,0.2)"}}>
+          <Button href="https://discord.gg/vKaB2B8v" variant="outlined" target="_blank" size="small" style={{background:"rgba(179, 66, 245,0.2)"}}>
             discord
           </Button>
           <Button href="#" variant="outlined" size="small" style={{background:"rgba(179, 66, 245,0.2)"}}>
