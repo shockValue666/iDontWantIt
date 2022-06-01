@@ -11,7 +11,7 @@ function DesktopNavbar() {
       <div>
         <Toolbar>
         <Container>
-          <img src="https://ibb.co/nfQxW17" alt="" />
+          {/* <img src="https://ibb.co/nfQxW17" alt="" /> */}
         </Container>
         <Container maxWidth="xl" style={{display:"flex", justifyContent:"flex-end",gap:"4%",alignItems:"center"}}>
           <Link to="/" style={{textDecoration:"none"}}>
