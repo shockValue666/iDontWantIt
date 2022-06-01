@@ -86,7 +86,9 @@ const Navbar = () => {
                                                 {/* <p>
                                                 <ListItemText primary="Home" />
                                                 </p> */}
-                                                <Button variant="contained" size="medium" sx={{fontSize:"18px",margin:3,background:"rgba(66, 245, 236,0.1)"}} color="info">
+                                                {/* <Button variant="contained" size="medium" sx={{fontSize:"18px",margin:3,background:"rgba(66, 245, 236,0.1)"}} color="info"> */}
+                                                        <Button variant="contained" size="medium" style={{fontSize:"18px",margin:3,color:"white",background:"rgba(201,55,173,255)"}}>
+                                                        {/* variant="contained" size="large" style={{background:"rgba(201,55,173,255)",color:"white",fontWeight:"900"}} */}
                                                         home
                                                 </Button>
                                         </Link>
@@ -96,7 +98,10 @@ const Navbar = () => {
                                 <ListItemButton>
                                         <Link to="/roadmap"  style={{textDecoration:"none", color:"white"}}>
                                                 {/* <ListItemText primary="Roadmap" /> */}
-                                                <Button >roadmap</Button>
+                                                <Button variant="contained" size="medium" style={{fontSize:"18px",margin:3,color:"white",background:"rgba(201,55,173,255)"}}>
+                                                        roadmap
+
+                                                </Button>
                                         </Link>
                                         {/* <Button variant="contained" size="medium" sx={{fontSize:"18px",margin:3,background:"rgba(66, 245, 236,0.1)"}} color="info">
                                                 roadmap
@@ -111,19 +116,27 @@ const Navbar = () => {
                         <ListItem disablePadding component="a" target={"_blank"} href="https://discord.gg/vKaB2B8v">
                                 <ListItemButton>
                                         {/* <ListItemText primary="Discord" /> */}
-                                        <Button>Discord</Button>
+                                        <Button variant="contained" size="medium" style={{fontSize:"18px",margin:3,background:"rgba(248,199,140,255)",color:"#cc0e52"}}>
+                                                Discord
+
+                                        </Button>
                                 </ListItemButton>
                         </ListItem>
                         <ListItem disablePadding >
                                 <ListItemButton>
                                         {/* <ListItemText primary="Twitter" /> */}
-                                        <Button>Twitter</Button>
+                                        <Button variant="contained" size="medium" style={{fontSize:"18px",margin:3,background:"rgba(248,199,140,255)",color:"#cc0e52"}}>
+                                                Twitter
+
+                                        </Button>
                                 </ListItemButton>
                         </ListItem>
                         <ListItem disablePadding>
                                 <ListItemButton>
                                         {/* <ListItemText primary="Magic Eden" /> */}
-                                        <Button>Magic Eden</Button>
+                                        <Button variant="contained" size="medium" style={{fontSize:"18px",margin:3,background:"rgba(248,199,140,255)",color:"#cc0e52"}}>
+                                                Magic Eden
+                                        </Button>
                                 </ListItemButton>
                         </ListItem>
                         

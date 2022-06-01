@@ -4,33 +4,40 @@ import React from 'react'
 
 function DesktopNavbar() {
   return (
-    <div style={{color:"white"}}>
-      <Toolbar>
+    <div style={{color:"white",display:"flex",justifyContent:"space-around",alignItems:"center",backgroundColor:"black"}}>
+      <div style={{height:"100%",width:"10%"}}>
+        <img src="https://somespace.fra1.digitaloceanspaces.com/IMG_50067B2F73AB-2.jpeg" height={"100px"} width="100px" alt="" />
+      </div>
+      <div>
+        <Toolbar>
         <Container>
           <img src="https://ibb.co/nfQxW17" alt="" />
         </Container>
-        <Container maxWidth="xl" style={{display:"flex", justifyContent:"flex-end",gap:"2%"}}>
+        <Container maxWidth="xl" style={{display:"flex", justifyContent:"flex-end",gap:"4%",alignItems:"center"}}>
           <Link to="/" style={{textDecoration:"none"}}>
-            <Button variant="contained" size="large" style={{background:"rgba(66, 245, 236,0.1)",color:"white"}}>
+            {/* <Button variant="contained" size="large" style={{background:"rgba(66, 245, 236,0.1)",color:"white"}}> */}
+            <Button variant="contained" size="large" style={{background:"rgba(201,55,173,255)",color:"white",fontWeight:"900"}}>
               home
             </Button>
           </Link>
           <Link to="/roadmap" style={{textDecoration:"none"}}>
-            <Button variant="contained" size="large" style={{background:"rgba(66, 245, 236,0.1)",color:"white"}}>
+            {/* <Button variant="contained" size="large" style={{background:"rgba(66, 245, 236,0.1)",color:"white"}}> */}
+            <Button variant="contained" size="large" style={{background:"rgba(201,55,173,255)",color:"white",fontWeight:"900"}}>
               roadmap 
             </Button>
           </Link>
-          <Button href="https://discord.gg/vKaB2B8v" variant="outlined" target="_blank" size="small" style={{background:"rgba(179, 66, 245,0.2)"}}>
+          <Button href="https://discord.gg/vKaB2B8v" variant="outlined" target="_blank" size="small" style={{background:"rgba(248,199,140,255)",padding:"2%",color:"#cc0e52",fontWeight:"900"}}>
             discord
           </Button>
-          <Button href="#" variant="outlined" size="small" style={{background:"rgba(179, 66, 245,0.2)"}}>
+          <Button href="https://twitter.com/Depravedscient" variant="outlined" target="_blank" size="small" style={{background:"rgba(248,199,140,255)",padding:"2%",color:"#cc0e52",fontWeight:"900"}}>
             twitter
           </Button>
-          <Button href="#" variant="outlined" size="small" style={{background:"rgba(179, 66, 245,0.2)"}}>
+          <Button disabled href="#" variant="outlined" target="_blank" size="small" style={{background:"rgba(248,199,140,255)",padding:"2%",color:"#cc0e52",fontWeight:"900"}}>
             magic eden
           </Button>
         </Container>
       </Toolbar>
+      </div>
     </div>
   )
 }
