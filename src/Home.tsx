@@ -54,6 +54,34 @@ export interface HomeProps {
 }
 
 const Home = (props: HomeProps) => {
+
+  //bullshit
+  const [state,setState] = useState({
+              mobileView:false,
+  })
+  
+  
+  const {mobileView} = state;
+
+  useEffect(()=>{
+          const setResponsiveness = () => {
+          return window.innerWidth < 900 
+                  ? setState((prevState)=>({...prevState,mobileView:true}))
+                  : setState((prevState)=>({...prevState,mobileView:false}))
+          }
+          setResponsiveness()
+          console.log("mobil;e view vlaka koitaaaa: ",mobileView)
+          window.addEventListener("resize",()=> setResponsiveness())
+          console.log("used the effect")
+          return ()=>{
+          window.removeEventListener("resize",()=> setResponsiveness())
+          }
+  },[mobileView])
+
+
+
+  
+  //real shit
   const [isUserMinting, setIsUserMinting] = useState(false);
   const [candyMachine, setCandyMachine] = useState<CandyMachineAccount>();
   const [alertState, setAlertState] = useState<AlertState>({
@@ -492,7 +520,7 @@ const Home = (props: HomeProps) => {
           ) : (
             <>
               {candyMachine && (
-                <Grid
+                !mobileView ? (<Grid
                   container
                   direction="row"
                   justifyContent="center"
@@ -512,7 +540,7 @@ const Home = (props: HomeProps) => {
                       {`${itemsRemaining}`}
                     </Typography>
                   </Grid>
-                  <Grid item xs={4}>
+                  <Grid item xs={6}>
                     <Typography variant="body2" color="textSecondary">
                       {isWhitelistUser && discountPrice
                         ? 'Discount Price'
@@ -530,7 +558,86 @@ const Home = (props: HomeProps) => {
                           )}`}
                     </Typography>
                   </Grid>
-                  <Grid item xs={5}>
+                  <Grid item xs={6}>
+                    {isActive && endDate && Date.now() < endDate.getTime() ? (
+                      <>
+                        <MintCountdown
+                          key="endSettings"
+                          date={getCountdownDate(candyMachine)}
+                          style={{ justifyContent: 'flex-end' }}
+                          status="COMPLETED"
+                          onComplete={toggleMintButton}
+                        />
+                        <Typography
+                          variant="caption"
+                          align="center"
+                          display="block"
+                          style={{ fontWeight: 'bold' }}
+                        >
+                          TO END OF MINT
+                        </Typography>
+                      </>
+                    ) : (
+                      <>
+                        <MintCountdown
+                          key="goLive"
+                          date={getCountdownDate(candyMachine)}
+                          style={{ justifyContent: 'flex-end' }}
+                          status={
+                            candyMachine?.state?.isSoldOut ||
+                            (endDate && Date.now() > endDate.getTime())
+                              ? 'COMPLETED'
+                              : isPresale
+                              ? 'PRESALE'
+                              : 'LIVE'
+                          }
+                          onComplete={toggleMintButton}
+                        />
+                        {isPresale &&
+                          candyMachine.state.goLiveDate &&
+                          candyMachine.state.goLiveDate.toNumber() >
+                            new Date().getTime() / 1000 && (
+                            <Typography
+                              variant="caption"
+                              align="center"
+                              display="block"
+                              style={{ fontWeight: 'bold' }}
+                            >
+                              UNTIL PUBLIC MINT
+                            </Typography>
+                          )}
+                      </>
+                    )}
+                  </Grid>
+                  
+                </Grid>)
+                :
+                (
+                  <Grid
+                  container
+                  direction="row"
+                  justifyContent="center"
+                  wrap="nowrap"
+                >
+                  <Grid item xs={6}>
+                    <Typography variant="body2" color="textSecondary">
+                      {isWhitelistUser && discountPrice
+                        ? 'Discount Price'
+                        : 'Price'}
+                    </Typography>
+                    <Typography
+                      variant="h6"
+                      color="textPrimary"
+                      style={{ fontWeight: 'bold' }}
+                    >
+                      {isWhitelistUser && discountPrice
+                        ? `◎ ${formatNumber.asNumber(discountPrice)}`
+                        : `◎ ${formatNumber.asNumber(
+                            candyMachine.state.price,
+                          )}`}
+                    </Typography>
+                  </Grid>
+                  <Grid item xs={6}>
                     {isActive && endDate && Date.now() < endDate.getTime() ? (
                       <>
                         <MintCountdown
@@ -582,6 +689,7 @@ const Home = (props: HomeProps) => {
                     )}
                   </Grid>
                 </Grid>
+                )
               )}
               <MintContainer>
                 {candyMachine?.state.isActive &&

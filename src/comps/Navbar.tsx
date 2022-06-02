@@ -65,8 +65,8 @@ const Navbar = () => {
         const handleDrawerClose = () => setState((prevState) => ({ ...prevState, drawerOpen: false }));
 
         return(
-            <Toolbar>
-                <Button onClick={handleDrawerOpen} style={{textDecoration:"none"}}>
+            <Toolbar style={{backgroundColor:"black"}}>
+                <Button onClick={handleDrawerOpen} style={{textDecoration:"none",backgroundColor:"pink",fontWeight:"666",fontSize:"20px"}}>
                         {/* <Fab color="primary" aria-label="edit">
                                 <MenuIcon />
                         </Fab> */}
@@ -79,7 +79,14 @@ const Navbar = () => {
                 onClose: handleDrawerClose,
                 }}
                 >
-                    <List>
+                    <List style={{backgroundColor:"black",height:"100%"}}>
+                        <ListItem disablePadding>
+                                <ListItemButton>
+                                        <Link to="/">
+                                                <img src="https://somespace.fra1.digitaloceanspaces.com/IMG_50067B2F73AB-2.jpeg" height={"100px"} width="100px" alt="" />
+                                        </Link>
+                                </ListItemButton>
+                        </ListItem>
                         <ListItem disablePadding>
                                 <ListItemButton >
                                         <Link to="/" style={{textDecoration:"none", color:"white"}} >
