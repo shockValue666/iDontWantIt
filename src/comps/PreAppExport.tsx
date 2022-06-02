@@ -5,6 +5,7 @@ import Footer from "./Footer"
 import Navbar from './Navbar'
 // import ExampleNavbar from './ExampleNavbar'
 import RoadMapHomePage from './RoadMapHomePage'
+import CommunityPromo from './CommunityPromo'
 
 function PreAppExport() {
   return (
@@ -17,6 +18,7 @@ function PreAppExport() {
             <CardDefinition/>
           </div>
         </div>
+        <CommunityPromo/>
         <RoadMapHomePage/>
         <Footer/>
     </div>

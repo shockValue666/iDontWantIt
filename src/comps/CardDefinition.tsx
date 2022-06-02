@@ -13,7 +13,7 @@ const bull = (
 
 function CardDefinition() {
   return (
-      <Box sx={{display:"flex",justifyContent:"space-around", padding:"100px",flexWrap:"wrap",rowGap:"60px"}}>
+      <Box sx={{display:"flex",justifyContent:"space-around", padding:"100px",flexWrap:"wrap",rowGap:"60px",marginTop:"10%"}}>
             <Card style={{ minWidth: 275, maxWidth:500,background:"rgba(204, 199, 184,0.5)"}}>
                         <CardContent sx={{background:"rgba(204, 199, 184,0.5)"}}>
                             <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
