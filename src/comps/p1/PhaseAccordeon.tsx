@@ -1,5 +1,5 @@
 // import { Box,Grid,styled,ThemeProvider,Typography } from '@mui/material'
-import { Box,Grid,ThemeProvider,Typography } from '@mui/material'
+import { Box,Button,Grid,ThemeProvider,Typography } from '@mui/material'
 import React,{useEffect,useState} from 'react'
 import {theme} from "../styles"
 
@@ -32,6 +32,9 @@ function PhaseAccordeon() {
         <Grid container spacing={5} height="90vh" width="90vw">
             <Grid sx={{border:"2px solid black",background:"#826882"}}  item xs={12} sm={6}>
                     <Box padding="15%">
+                        {/* <Button variant="contained">
+                            poutsa
+                        </Button> */}
                         <Typography variant="h3" marginBottom="20%">
                             {/* <Responsive>
                                 width: {w}

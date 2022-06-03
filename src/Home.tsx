@@ -621,9 +621,7 @@ const Home = (props: HomeProps) => {
                 >
                   <Grid item xs={6}>
                     <Typography variant="body2" color="textSecondary">
-                      {isWhitelistUser && discountPrice
-                        ? 'Discount Price'
-                        : 'Price'}
+                      {'Price'}
                     </Typography>
                     <Typography
                       variant="h6"

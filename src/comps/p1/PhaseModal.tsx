@@ -4,15 +4,15 @@ import PhaseAccordeon from './PhaseAccordeon'
 
 
 
-
-
 function PhaseModal() {
     const [open,setOpen]=useState(false)
   return (
     <div>
-        <Button sx={{color:"white",background: "none" ,fontSize:"30px", '&:hover': {background: "black",}}} variant="contained" onClick={()=>{setOpen(true)}}>
-            p∫∫∫∫∫∫∫1
-        </Button>
+        <div style={{display:"flex",flexDirection:"column",width:"100%",textAlign:"center",height:"306px"}}>
+          <Button style={{flex:"auto",color:"white",background: "none",width:"100%",height:"100%" ,fontSize:"30px",alignSelf:"stretch"}} variant="contained" color={"primary"} onClick={()=>{setOpen(true)}}>
+              p∫∫∫∫∫∫∫1
+          </Button>
+        </div>
       <Dialog open={open} onClose={()=>{setOpen(false)}} maxWidth="xl"> 
             {/* <DialogTitle>This is my cock</DialogTitle>
             <DialogContent>
@@ -25,7 +25,7 @@ function PhaseModal() {
                     x
                 </Button>
             </DialogActions> */}
-            <PhaseAccordeon/>
+            <PhaseAccordeon />
             {/* poutsa */}
       </Dialog>
     </div>
