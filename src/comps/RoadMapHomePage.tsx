@@ -2,6 +2,7 @@ import {VerticalTimeline,VerticalTimelineElement} from "react-vertical-timeline-
 import "react-vertical-timeline-component/style.min.css"
 import {roadmapElements} from "./roadmap.json";
 import React from 'react'
+import RoadMapComponent from "./RoadMapComponent";
 
 function RoadMapHomePage() {
 
@@ -24,7 +25,7 @@ function RoadMapHomePage() {
                             // }
                             // icon = {AccessibleForwardIcon}
                         >
-
+                                <RoadMapComponent props={el.sole}/>
                         </VerticalTimelineElement>
                     )
                 })}

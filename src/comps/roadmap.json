@@ -5,28 +5,56 @@
       "title": "1111111±",
       "description": "1111111±",
       "date": "1111111±",
-      "icon": "1111111±"
+      "icon": "1111111±",
+      "sole":["Community build","launch discord, twitter, website","whitelist process (Handpicking)","Community growth and Marketing"]
     },
     {
       "id": 2,
       "title": "2222222±",
       "description": "2222222±",
       "date": "2222222±",
-      "icon": "2222222±"
+      "icon": "2222222±",
+      "sole":["WL mint","Public mint (if available)","Immediate secondary market listings on all marketplaces"]
     },
     {
       "id": 3,
       "title": "3333333±",
       "description": "3333333±",
       "date": "3333333±",
-      "icon": "3333333±"
+      "icon": "3333333±",
+      "sole":["Holders discord verification","Alpha group for holders","poutsa"]
     },
     {
       "id": 4,
       "title": "4444444±",
       "description": "4444444±",
       "date": "4444444±",
-      "icon": "4444444±"
+      "icon": "4444444±",
+      "sole":["Holders exclusive verification","Digital Autonomous organization launch and Protocol delegation"]
+    },
+    {
+      "id": 5,
+      "title": "5555555±",
+      "description": "5555555±",
+      "date": "5555555±",
+      "icon": "5555555±",
+      "sole":["Staking Vault Launch","Native spl token launch(DST)","Token airdrop and initial distribution"]
+    },
+    {
+      "id": 6,
+      "title": "6666666±",
+      "description": "6666666±",
+      "date": "6666666±",
+      "icon": "6666666±",
+      "sole":["Custom made nft collection exclusive to stakers and diamond hands","Merchandise — streetwear , edgy underground urban fashion","Holders exclusive meetup"]
+    },
+    {
+      "id": 7,
+      "title": "7777777±",
+      "description": "7777777±",
+      "date": "7777777±",
+      "icon": "7777777±",
+      "sole":["Marketplace build","Marketplace launch","Marketplace growth plan activated"]
     }
   ]
 }
