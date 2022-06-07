@@ -5,7 +5,7 @@ import TypeWritter from './TypeWriter'
 
 function MintButtonWrapper({children}:any) {
   return (
-    <div style={{border:"2px solid black",display:"flex",justifyContent:"center",backgroundImage:"url(https://somespace.fra1.digitaloceanspaces.com/Laboratorium%20%281%29.png)",backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
+    <div style={{border:"2px solid black",display:"flex",justifyContent:"center",backgroundImage:"url(https://somespace.fra1.digitaloceanspaces.com/Laboratorium%20%281%292.jpeg)",backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
             <Grid container spacing={2} height="750px" padding={5}>
                 <Grid item xs={1} >
                 </Grid>
