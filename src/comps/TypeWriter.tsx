@@ -18,15 +18,23 @@ function TypeWritter() {
         justifyContent:"center",
         alignItems:"center",
         height:"100%",
-        fontSize:"50px"
+        fontSize:"50px",
+        color:"white",
+        // backgroundColor:"rgba(248,228,252,255)"
         }}>
                 <Typewriter
+                options={{
+                //   delay:500
+                }}
                     onInit={(typewriter)=>{
                         typewriter.typeString("💊🚬🕉💊🚬🕉")
-                            .pauseFor(1000)
+                            .pauseFor(100)
                             .deleteAll()
-                            .pauseFor(1000)
-                            .typeString("fuck this life")
+                            .pauseFor(100)
+                            .typeString(`<p style={{fontSize:"50px",color:"white",backgroundColor:"rgba(248,228,252,255)",}} > fuck this life</p>`)
+                            .deleteAll()
+                            .pauseFor(100)
+                            .typeString("Depraved Scientists is an exclusive collection of 6,666 unique randomly generated NFTs. Owning a depraved Scientist contributes to the financialization of experiments against humanity. We fuck with humanity. Fuck this shit")
                             .callFunction(()=>{
                                 console.log('eimai mikropsolis kai asximomouris')
                             })
