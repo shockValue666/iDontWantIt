@@ -22,25 +22,42 @@ function TypeWritter() {
         color:"white",
         // backgroundColor:"rgba(248,228,252,255)"
         }}>
-                <Typewriter
-                options={{
-                //   delay:500
-                }}
-                    onInit={(typewriter)=>{
-                        typewriter.typeString("💊🚬🕉💊🚬🕉")
-                            .pauseFor(100)
-                            .deleteAll()
-                            .pauseFor(100)
-                            .typeString(`<p style={{fontSize:"50px",color:"white",backgroundColor:"rgba(248,228,252,255)",}} > fuck this life</p>`)
-                            .deleteAll()
-                            .pauseFor(100)
-                            .typeString("Depraved Scientists is an exclusive collection of 6,666 unique randomly generated NFTs. Owning a depraved Scientist contributes to the financialization of experiments against humanity. We fuck with humanity. Fuck this shit")
-                            .callFunction(()=>{
-                                console.log('eimai mikropsolis kai asximomouris')
-                            })
-                            .start()
+                <p style={{
+                    // backgroundColor:"rgba(248,228,252,255)",
+                    // zIndex:"1000"
+                    marginBottom:"75px",
+                }} >
+                    <Typewriter
+                    options={{
+                    delay:100
                     }}
-                />
+                        onInit={(typewriter)=>{
+                            typewriter.typeString("💊🚬🕉💊🚬🕉")
+                                .pauseFor(100)
+                                .deleteAll()
+                                .pauseFor(100)
+                                .typeString(`<p style={{fontSize:"50px",color:"white",backgroundColor:"rgba(248,228,252,255)",}} > fuck this life</p>`)
+                                .deleteAll()
+                                .pauseFor(100)
+                                // .typeString(`<p style={{marginBottom:"5%",border:"3px solid red"}}>Depraved Scientists is an exclusive collection of 6,666 unique randomly generated NFTs. </p>`)
+                                .typeString(`<p style={{marginBottom:"5%",border:"3px solid red"}}>lmao</p>`)
+                                .deleteAll()
+                                .pauseFor(100)
+                                .typeString(`<p style={{marginBottom:"5%",border:"3px solid red"}}>Owning a depraved Scientist contributes to the financialization of experiments against humanity. We fuck with humanity. Fuck this shit 🤢 🤮 </p>`)
+                                .callFunction(()=>{
+                                    console.log('eimai mikropsolis kai asximomouris')
+                                })
+                                .start()
+                        }}
+                    />
+                    <div
+                    style={{
+                        margin:"10px"
+                    }}
+                    >
+
+                    </div>
+                </p>
             </div>
         </div>);
 }

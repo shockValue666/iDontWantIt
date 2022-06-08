@@ -506,12 +506,13 @@ const Home = (props: HomeProps) => {
 
   return (
     <Container style={{ marginTop: 100 }}>
-      <Container maxWidth="xs" style={{ position: 'relative' }}>
+      <Container maxWidth="xs" style={{ position: 'relative', }}>
         <Paper
           style={{
             padding: 24,
             paddingBottom: 10,
-            backgroundColor: '#151A1F',
+            // backgroundColor: '#151A1F',
+            backgroundColor: 'rgba(124,23,52,0.1)',
             borderRadius: 6,
           }}
         >

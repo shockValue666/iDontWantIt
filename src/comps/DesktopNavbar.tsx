@@ -35,6 +35,9 @@ function DesktopNavbar() {
           <Button disabled href="#" variant="outlined" target="_blank" size="small" style={{background:"rgba(248,199,140,255)",padding:"2%",color:"#cc0e52",fontWeight:"900"}}>
             magic eden
           </Button>
+          <Button href="https://mapedeveloper.gitbook.io/untitled/" variant="outlined" target="_blank" size="small" style={{background:"rgba(248,199,140,255)",padding:"2%",color:"#cc0e52",fontWeight:"900"}}>
+            docs
+          </Button>
         </Container>
       </Toolbar>
       </div>
