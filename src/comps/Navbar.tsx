@@ -115,6 +115,20 @@ const Navbar = () => {
                                         </Button> */}
                                 </ListItemButton>
                         </ListItem>
+                        <ListItem disablePadding>
+                                <ListItemButton>
+                                        <Link to="/about"  style={{textDecoration:"none", color:"white"}}>
+                                                {/* <ListItemText primary="Roadmap" /> */}
+                                                <Button variant="contained" size="medium" style={{fontSize:"18px",margin:3,color:"white",background:"rgba(201,55,173,255)"}}>
+                                                        about
+
+                                                </Button>
+                                        </Link>
+                                        {/* <Button variant="contained" size="medium" sx={{fontSize:"18px",margin:3,background:"rgba(66, 245, 236,0.1)"}} color="info">
+                                                roadmap
+                                        </Button> */}
+                                </ListItemButton>
+                        </ListItem>
                         {/* <ListItem disablePadding>
                                 <ListItemButton>
                                         <ListItemText primary="sth else" />

@@ -26,6 +26,12 @@ function DesktopNavbar() {
               roadmap 
             </Button>
           </Link>
+          <Link to="/about" style={{textDecoration:"none"}}>
+            {/* <Button variant="contained" size="large" style={{background:"rgba(66, 245, 236,0.1)",color:"white"}}> */}
+            <Button variant="contained" size="large" style={{background:"rgba(201,55,173,255)",color:"white",fontWeight:"900"}}>
+              about
+            </Button>
+          </Link>
           <Button href="https://discord.gg/vKaB2B8v" variant="outlined" target="_blank" size="small" style={{background:"rgba(248,199,140,255)",padding:"2%",color:"#cc0e52",fontWeight:"900"}}>
             discord
           </Button>
