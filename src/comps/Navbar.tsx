@@ -134,7 +134,7 @@ const Navbar = () => {
                                         <ListItemText primary="sth else" />
                                 </ListItemButton>
                         </ListItem> */}
-                        <ListItem disablePadding component="a" target={"_blank"} href="https://discord.gg/vKaB2B8v">
+                        <ListItem disablePadding component="a" target={"_blank"} href="https://discord.gg/8HVUDTtc">
                                 <ListItemButton>
                                         {/* <ListItemText primary="Discord" /> */}
                                         <Button variant="contained" size="medium" style={{fontSize:"18px",margin:3,background:"rgba(248,199,140,255)",color:"#cc0e52"}}>

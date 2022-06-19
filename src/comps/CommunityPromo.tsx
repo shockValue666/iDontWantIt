@@ -15,7 +15,7 @@ function CommunityPromo() {
                 {/* <Box width="200px" height="200px" sx={{backgroundImage:"linear-gradient(to right top, #c837ac, #a064d3, #6c82e8, #2f98ea, #07a8df)"}}> */}
                 <Box width="200px" height="200px">
                     <Box width="100%" height="100%" sx={{display:"flex",justifyContent:"center",alignItems:"center"}}>
-                        <Button LinkComponent={'a'} href="https://google.com" target="_blank" variant='contained' style={{backgroundColor:"black"}}>
+                        <Button LinkComponent={'a'} href="https://discord.gg/8HVUDTtc" target="_blank" variant='contained' style={{backgroundColor:"black"}}>
                             <DiscordIcon style={{width:"100px",height:"100px"}} className={"App-logo"}/>
                         </Button>
                     </Box>

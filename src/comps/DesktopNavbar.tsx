@@ -32,7 +32,7 @@ function DesktopNavbar() {
               about
             </Button>
           </Link>
-          <Button href="https://discord.gg/vKaB2B8v" variant="outlined" target="_blank" size="small" style={{background:"rgba(248,199,140,255)",padding:"2%",color:"#cc0e52",fontWeight:"900"}}>
+          <Button href="https://discord.gg/8HVUDTtc" variant="outlined" target="_blank" size="small" style={{background:"rgba(248,199,140,255)",padding:"2%",color:"#cc0e52",fontWeight:"900"}}>
             discord
           </Button>
           <Button href="https://twitter.com/Depravedscient" variant="outlined" target="_blank" size="small" style={{background:"rgba(248,199,140,255)",padding:"2%",color:"#cc0e52",fontWeight:"900"}}>
