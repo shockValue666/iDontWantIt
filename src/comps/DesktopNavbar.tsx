@@ -32,6 +32,11 @@ function DesktopNavbar() {
               about
             </Button>
           </Link>
+          {/* <Link to="/whitepaper" style={{textDecoration:"none"}}>
+            <Button variant="contained" size="large" style={{background:"rgba(201,55,173,255)",color:"white",fontWeight:"900"}}>
+              whitepaper
+            </Button>
+          </Link> */}
           <Button href="https://discord.gg/8HVUDTtc" variant="outlined" target="_blank" size="small" style={{background:"rgba(248,199,140,255)",padding:"2%",color:"#cc0e52",fontWeight:"900"}}>
             discord
           </Button>
@@ -44,7 +49,7 @@ function DesktopNavbar() {
           <Button href="https://mapedeveloper.gitbook.io/untitled/" variant="outlined" target="_blank" size="small" style={{background:"rgba(248,199,140,255)",padding:"2%",color:"#cc0e52",fontWeight:"900"}}>
             docs
           </Button>
-          <Button href="https://somespace.fra1.digitaloceanspaces.com/dsnew.pdf/" variant="outlined" target="_blank" size="small" style={{background:"rgba(248,199,140,255)",padding:"2%",color:"#cc0e52",fontWeight:"900"}}>
+          <Button href="https://somespace.fra1.cdn.digitaloceanspaces.com/dsnew.pdf" variant="outlined" target="_blank" size="large" style={{paddingRight:"10%",paddingLeft:"10%",background:"rgba(248,199,140,255)",padding:"2%",color:"#cc0e52",fontWeight:"900"}}>
             whitepaper
           </Button>
         </Container>

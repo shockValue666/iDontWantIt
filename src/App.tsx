@@ -22,6 +22,7 @@ import PreAppExport from './comps/PreAppExport';
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
 import RoadMap from './comps/RoadMap';
 import About from './comps/About';
+import Whitepaper from "./comps/WhitePaper";
 // import Navbar from './comps/Navbar';
 
 
@@ -59,6 +60,7 @@ const App = () => {
                   <Route path="/" element={<PreAppExport/>} />
                   <Route path="/roadmap" element={<RoadMap/>} />
                   <Route path="/about" element={<About/>} />
+                  <Route path="/whitepaper" element={<Whitepaper/>} />
                 </Routes>
                 
               </Router>
