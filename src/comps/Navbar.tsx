@@ -160,11 +160,11 @@ const Navbar = () => {
                                         </Button>
                                 </ListItemButton>
                         </ListItem>
-                        <ListItem disablePadding href="https://mapedeveloper.gitbook.io/untitled/" component="a" target={"_blank"}>
+                        <ListItem disablePadding href="https://somespace.fra1.digitaloceanspaces.com/dsnew.pdf" component="a" target={"_blank"}>
                                 <ListItemButton>
                                         {/* <ListItemText primary="Magic Eden" /> */}
                                         <Button variant="contained" size="medium" style={{fontSize:"18px",margin:3,background:"rgba(248,199,140,255)",color:"#cc0e52"}}>
-                                                Docs
+                                                Whitepaper
                                         </Button>
                                 </ListItemButton>
                         </ListItem>
