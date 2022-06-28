@@ -8,9 +8,10 @@ function PhaseModal() {
     const [open,setOpen]=useState(false)
   return (
     <div>
-        <div style={{display:"flex",flexDirection:"column",width:"100%",textAlign:"center",height:"306px"}}>
+        <div style={{display:"flex",flexDirection:"column",width:"100%",textAlign:"center",height:"256px"}}>
           <Button style={{flex:"auto",color:"white",background: "none",width:"100%",height:"100%" ,fontSize:"30px",alignSelf:"stretch"}} variant="contained" color={"primary"} onClick={()=>{setOpen(true)}}>
-              p∫∫∫∫∫∫∫1
+              {/* p∫∫∫∫∫∫∫1 */}
+              Roadmap
           </Button>
         </div>
       <Dialog open={open} onClose={()=>{setOpen(false)}} maxWidth="xl"> 

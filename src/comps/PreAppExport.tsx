@@ -7,6 +7,7 @@ import Navbar from './Navbar'
 import RoadMapHomePage from './RoadMapHomePage'
 import CommunityPromo from './CommunityPromo'
 
+
 function PreAppExport() {
   return (
       <div style={{background:"black",color:"white"}}>
@@ -20,7 +21,9 @@ function PreAppExport() {
         </div>
         <CommunityPromo/>
         <RoadMapHomePage/>
-        <Footer/>
+        {/* <div style={{bottom:"0",position:"absolute"}}> */}
+          <Footer/>
+        {/* </div> */}
     </div>
   )
 }

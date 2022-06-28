@@ -9,9 +9,10 @@ function PhaseModal3() {
     // }
   return (
     <div>
-        <div style={{display:"flex",flexDirection:"column",width:"100%",textAlign:"center",height:"306px"}}>
+        <div style={{display:"flex",flexDirection:"column",width:"100%",textAlign:"center",height:"256px"}} onClick={()=>{console.log("clicked the div")}}>
           <Button style={{flex:"auto",color:"white",background: "none",width:"100%",height:"100%" ,fontSize:"30px",alignSelf:"stretch"}} variant="contained" color={"primary"} onClick={()=>{setOpen(true)}}>
-              p∫∫∫∫∫∫∫3
+              {/* p∫∫∫∫∫∫∫3 */}
+              Staking
           </Button>
         </div>
       <Dialog open={open} onClose={()=>{setOpen(false)}} maxWidth="xl"> 

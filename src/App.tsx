@@ -23,6 +23,7 @@ import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
 import RoadMap from './comps/RoadMap';
 import About from './comps/About';
 import Whitepaper from "./comps/WhitePaper";
+import TokenGate from './comps/TokenGate';
 // import Navbar from './comps/Navbar';
 
 
@@ -61,6 +62,7 @@ const App = () => {
                   <Route path="/roadmap" element={<RoadMap/>} />
                   <Route path="/about" element={<About/>} />
                   <Route path="/whitepaper" element={<Whitepaper/>} />
+                  <Route path="/tokenGate" element={<TokenGate/>} />
                 </Routes>
                 
               </Router>
