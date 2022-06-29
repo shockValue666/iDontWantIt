@@ -16,7 +16,7 @@ function About() {
                 drawerOpen: false,
     })
 
-   const {mobileView} = state;
+   const {mobileView } = state;
 
     useEffect(()=>{
             const setResponsiveness = () => {
@@ -34,7 +34,8 @@ function About() {
   return (
       <div style={{backgroundColor:"black",color:"white"}}>
           <Navbar/>
-        <h1 style={{color:"black",marginTop:"13%"}}>sti poutsa m exw ena asimi sz</h1>
+        {/* <h1 style={{color:"black",marginTop:"13%"}}>sti poutsa m exw ena asimi sz</h1> */}
+        <h1 style={{color:"black",marginTop:"3%"}}>sti poutsa m exw ena asimi sz</h1>
 
         
         <MainAboutComponent/>
