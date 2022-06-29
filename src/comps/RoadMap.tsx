@@ -1,9 +1,9 @@
 import { Typography } from '@material-ui/core'
 import React, { useEffect, useState } from 'react'
 import Footer from './Footer'
-import MainShitGrid from './MainShitGrid'
+// import MainShitGrid from './MainShitGrid'
 import Navbar from './Navbar'
-import BottomPic from './p1/BottomPic'
+import BottomPic from './p1Roadmap/BottomPic'
 import RoadMapExplained from './RoadMapExplained'
 
 function RoadMap() {
@@ -14,7 +14,7 @@ function RoadMap() {
                 drawerOpen: false,
     })
 
-   const {mobileView,drawerOpen} = state;
+   const {mobileView} = state;
 
     useEffect(()=>{
             const setResponsiveness = () => {
@@ -45,10 +45,12 @@ function RoadMap() {
       </Typography>
       <RoadMapExplained/>
       <BottomPic/>
-      {!mobileView ? (<><MainShitGrid/><div style={{position:"fixed",bottom:"0"}}>
+      {/* {!mobileView ? (<><MainShitGrid/><div style={{position:"fixed",bottom:"0"}}>
       <Footer/>
-      </div></>) : null}
+      </div></>) : null} */}
         {/* <MainShitGrid/> */}
+
+        <Footer/>
       </div>
     </>
   )
