@@ -2,17 +2,17 @@ import { Button, Dialog } from '@mui/material'
 import React,{useState} from 'react'
 import PhaseAccordeon from './PhaseAccordeon';
 
-function PhaseModal3() {
+function PhaseModal5() {
     const [open,setOpen]=useState(false)
     // const changeState = () => {
     //   setOpen(true)
     // }
   return (
     <div>
-        <div style={{display:"flex",flexDirection:"column",width:"100%",textAlign:"center",height:"256px"}} onClick={()=>{console.log("clicked the div")}}>
+        <div style={{display:"flex",flexDirection:"column",width:"100%",textAlign:"center",height:"256px"}}>
           <Button style={{flex:"auto",color:"white",background: "none",width:"100%",height:"100%" ,fontSize:"30px",alignSelf:"stretch"}} variant="contained" color={"primary"} onClick={()=>{setOpen(true)}}>
               {/* p∫∫∫∫∫∫∫3 */}
-              Staking
+              ds marketplace
           </Button>
         </div>
       <Dialog open={open} onClose={()=>{setOpen(false)}} maxWidth="xl"> 
@@ -33,4 +33,4 @@ function PhaseModal3() {
   )
 }
 
-export default PhaseModal3
+export default PhaseModal5
