@@ -29,8 +29,19 @@ import TokenGate from './comps/TokenGate';
 
 const theme = createTheme({
   palette: {
-    type: 'dark',
+    primary:{
+      main: "rgba(6,6,6,1)"
+    },
+    secondary:{
+      main: "rgba(6,6,6,1)"
+    }
   },
+  typography:{
+    allVariants:{
+      fontFamily: 'Montserrat',
+      textTransform:"none",
+    }
+  }
 });
 
 
