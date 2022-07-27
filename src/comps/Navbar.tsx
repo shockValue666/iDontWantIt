@@ -129,6 +129,19 @@ const Navbar = () => {
                                         </Button> */}
                                 </ListItemButton>
                         </ListItem>
+                        <ListItem disablePadding component="a" target={"_blank"} href="https://staking.depravedscientists.online/">
+                                <ListItemButton>
+                                                {/* <ListItemText primary="Roadmap" /> */}
+                                                <Button variant="contained" size="medium" style={{fontSize:"18px",margin:3,color:"white",background:"rgba(201,55,173,255)"}}>
+                                                        staking
+
+                                                </Button>
+                                        
+                                        {/* <Button variant="contained" size="medium" sx={{fontSize:"18px",margin:3,background:"rgba(66, 245, 236,0.1)"}} color="info">
+                                                roadmap
+                                        </Button> */}
+                                </ListItemButton>
+                        </ListItem>
                         {/* <ListItem disablePadding>
                                 <ListItemButton>
                                         <ListItemText primary="sth else" />

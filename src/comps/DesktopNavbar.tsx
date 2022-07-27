@@ -20,6 +20,12 @@ function DesktopNavbar() {
               home
             </Button>
           </Link>
+
+            {/* <Button variant="contained" size="large" style={{background:"rgba(66, 245, 236,0.1)",color:"white"}}> */}
+            <Button target="_blank" href="https://staking.depravedscientists.online/" variant="contained" size="large" style={{background:"rgba(201,55,173,255)",color:"white",fontWeight:"900",paddingLeft:"5%",paddingRight:"5%"}}>
+              staking
+            </Button>
+
           <Link to="/roadmap" style={{textDecoration:"none"}}>
             {/* <Button variant="contained" size="large" style={{background:"rgba(66, 245, 236,0.1)",color:"white"}}> */}
             <Button variant="contained" size="large" style={{background:"rgba(201,55,173,255)",color:"white",fontWeight:"900"}}>
