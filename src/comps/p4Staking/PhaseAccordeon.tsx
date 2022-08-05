@@ -23,7 +23,7 @@ function PhaseAccordeon({handleClose}:any) {
         <Grid container spacing={5} style={{height:"90vh", width:"90vw",background:"#826882"}}>
             <Grid sx={{border:"2px solid black",background:"#826882",height:"90vh"}}  item xs={12} sm={12}>
                 <Box style={{border:"10x solid white",width:"90%",height:"90%",padding:"10%"}}>
-                     <Button variant="contained" style={{position:"absolute", right:"10%"}} onClick={handleClose}>
+                     <Button variant="contained" style={{position:"absolute", right:"10%",marginBottom:"12%"}} onClick={handleClose}>
                             x
                         </Button>
                     <Typography component="h1" style={{fontSize:"30px",marginBottom:"10%"}}>
