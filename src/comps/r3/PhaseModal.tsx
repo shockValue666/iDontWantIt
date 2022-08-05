@@ -9,6 +9,9 @@ function PhaseModal3() {
     // const changeState = () => {
     //   setOpen(true)
     // }
+    const handleClose = () => {
+      setOpen(false)
+    }
   return (
     <div>
           <div style={{display:"flex",flexDirection:"column",width:"100%",textAlign:"center",height:"288px"}}>
@@ -30,7 +33,7 @@ function PhaseModal3() {
                     x
                 </Button>
             </DialogActions> */}
-            <PhaseAccordeon/>
+            <PhaseAccordeon handleClose={handleClose}/>
       </Dialog>
     </div>
   )

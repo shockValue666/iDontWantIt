@@ -1,5 +1,5 @@
 // import { Box,Grid,styled,ThemeProvider,Typography } from '@mui/material'
-import { Box,Grid,ThemeProvider,Typography } from '@mui/material'
+import { Box,Grid,Button,ThemeProvider,Typography } from '@mui/material'
 import React,{useEffect,useState} from 'react'
 import {theme} from "../styles"
 
@@ -12,7 +12,7 @@ import {theme} from "../styles"
 //     }
 // }))
 
-function PhaseAccordeon() {
+function PhaseAccordeon({handleClose}:any) {
 
     // const [w,setW] = useState(window.innerWidth)
     const [,setW] = useState(window.innerWidth)
@@ -29,12 +29,15 @@ function PhaseAccordeon() {
 
   return (
     <ThemeProvider theme={theme}>
-        <Grid container spacing={5}  height="90vh" width="70vw">
+        <Grid container spacing={5}  height="85vh" width="70vw">
             <Grid sx={{border:"2px solid black",background:"#826882",overflow:"hidden"}}  item xs={12} sm={8}>
                     <Box padding="8%">
                         {/* <Button variant="contained">
                             poutsa
                         </Button> */}
+                        <Button variant="contained" style={{position:"absolute", right:"10%"}} onClick={handleClose}>
+                            x
+                        </Button>
                         <Typography variant="h3" padding="5%">
                             {/* <Responsive>
                                 width: {w}

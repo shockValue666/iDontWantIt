@@ -8,6 +8,9 @@ import {Link} from "react-router-dom";
 
 function PhaseModal() {
     const [open,setOpen]=useState(false)
+    const handleClose = () => {
+      setOpen(false)
+    }
   return (
     <div>
       <div style={{display:"flex",flexDirection:"column",width:"100%",textAlign:"center",height:"288px"}}>
@@ -29,7 +32,7 @@ function PhaseModal() {
                     x
                 </Button>
             </DialogActions> */}
-            <PhaseAccordeon />
+            <PhaseAccordeon handleClose={handleClose}   />
             {/* poutsa */}
       </Dialog>
     </div>

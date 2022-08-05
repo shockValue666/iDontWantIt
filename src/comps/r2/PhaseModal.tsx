@@ -1,10 +1,13 @@
 // import { Button, Dialog } from '@mui/material'
-import { Dialog } from '@mui/material'
+import { Dialog, } from '@mui/material'
 import React,{useState} from 'react'
 import PhaseAccordeon from './PhaseAccordeon';
 import {Link} from "react-router-dom";
 
 function PhaseModal2() {
+  const handleClose = () => {
+      setOpen(false)
+    }
     const [open,setOpen]=useState(false)
   return (
     <div>
@@ -27,7 +30,7 @@ function PhaseModal2() {
                     x
                 </Button>
             </DialogActions> */}
-            <PhaseAccordeon/>
+            <PhaseAccordeon handleClose={handleClose}/>
       </Dialog>
     </div>
   )
