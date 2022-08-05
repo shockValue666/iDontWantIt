@@ -29,28 +29,34 @@ function PhaseAccordeon() {
 
   return (
     <ThemeProvider theme={theme}>
-        <Grid container spacing={5} height="90vh" width="90vw">
-            <Grid sx={{border:"2px solid black",background:"#826882"}}  item xs={12} sm={6}>
-                    <Box padding="15%">
+        <Grid container spacing={5}  height="90vh" width="70vw">
+            <Grid sx={{border:"2px solid black",background:"#826882",overflow:"hidden"}}  item xs={12} sm={8}>
+                    <Box padding="8%">
                         {/* <Button variant="contained">
                             poutsa
                         </Button> */}
-                        <Typography variant="h3" marginBottom="20%">
+                        <Typography variant="h3" padding="5%">
                             {/* <Responsive>
                                 width: {w}
                             </Responsive>
                             <br /> */}
                             p ∫∫∫∫∫ 1
                         </Typography>
-                        <Typography variant="h5" marginBottom="20%">
+                        <Typography variant="h5" padding="5%">
                             someshit about the first phase which is going to be 
                         </Typography>
-                        <Typography variant="body1">
-                            some other shit about the first phase
+                        <Typography variant="body1" padding="6%">
+                            -- some more shit about the first phase
+                        </Typography>
+                        <Typography variant="body1" padding="6%">
+                            -- some other shit about the first phase
+                        </Typography>
+                        <Typography variant="body1" padding="6%">
+                            -- you know what i mean
                         </Typography>
                     </Box>
             </Grid>
-            <Grid sx={{border:"2px solid black",display:{xs:"none",sm:"block"}}}  item xs={0} sm={6}>
+            <Grid sx={{border:"2px solid black",display:{xs:"none",sm:"block"}}}  item xs={0} sm={4}>
                     mikri
             </Grid> 
         </Grid>

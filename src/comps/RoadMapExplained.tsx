@@ -24,6 +24,7 @@ function RoadMapExplained() {
         rowGap="70px"
         width="100%"
         style={{border:""}}
+        paddingBottom="10%"
         >
 
           <Box

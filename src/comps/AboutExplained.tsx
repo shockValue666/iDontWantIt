@@ -34,7 +34,7 @@ function AboutExplained() {
                 backgroundColor: 'primary',
                 opacity: [0.9, 0.8, 0.7],
               },
-              borderRadius:"5%" ,
+              // borderRadius:"1%" ,
               margin:"2%"
             }}
           >
@@ -54,7 +54,7 @@ function AboutExplained() {
                 backgroundColor: 'primary',
                 opacity: [0.9, 0.8, 0.7],
               },
-              borderRadius:"5%",
+              borderRadius:"2%",
               margin:"2%"
             }}
           >
@@ -74,7 +74,7 @@ function AboutExplained() {
                 backgroundColor: 'white',
                 opacity: [0.9, 0.8, 0.7],
               },
-              borderRadius:"5%",
+              borderRadius:"2%",
               margin:"2%"
             }}
           >
@@ -96,7 +96,7 @@ function AboutExplained() {
                 backgroundColor: 'white',
                 opacity: [0.9, 0.8, 0.7],
               },
-              borderRadius:"5%",
+              borderRadius:"2%",
               margin:"2%"
             }}
           >
@@ -118,7 +118,7 @@ function AboutExplained() {
                 backgroundColor: 'white',
                 opacity: [0.9, 0.8, 0.7],
               },
-              borderRadius:"5%",
+              borderRadius:"2%",
               margin:"2%"
             }}
           >
