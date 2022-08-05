@@ -129,7 +129,7 @@ const Navbar = () => {
                                         </Button> */}
                                 </ListItemButton>
                         </ListItem>
-                        <ListItem disablePadding component="a" target={"_blank"} href="https://staking.depravedscientists.online/">
+                        <ListItem disablePadding component="a" target={"_blank"} href="https://staking.depravedscientists.xyz/">
                                 <ListItemButton>
                                                 {/* <ListItemText primary="Roadmap" /> */}
                                                 <Button variant="contained" size="medium" style={{fontSize:"18px",margin:3,color:"white",background:"rgba(201,55,173,255)"}}>
