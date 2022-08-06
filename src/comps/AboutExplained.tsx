@@ -2,7 +2,7 @@ import { Box,Grid,Container,Typography } from '@mui/material'
 import React from 'react'
 import PhaseModal from './p1Roadmap/PhaseModal'
 import PhaseModal2 from './p2Dao/PhaseModal'
-import PhaseModal3 from './p3Token/PhaseModal'
+// import PhaseModal3 from './p3Token/PhaseModal'
 import PhaseModal4 from './p4Staking/PhaseModal'
 import PhaseModal5 from './p5Merch/PhaseModal'
 
