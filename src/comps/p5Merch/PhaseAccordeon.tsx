@@ -21,8 +21,8 @@ function PhaseAccordeon({handleClose}:any) {
   return (
     <ThemeProvider theme={theme}>
         <Grid container spacing={5} style={{height:"90vh", width:"90vw"}}>
-            <Grid sx={{border:"2px solid black",background:"#826882"}}  item xs={12} sm={12}>
-                <Button  style={{position:"absolute", right:"10%",top:"5%",marginBottom:"12%",background:"black",color:"white"}} onClick={handleClose}>
+            <Grid sx={{border:"2px solid black",background:"#826882"}}  item xs={12} sm={12} justifyContent="center" alignItems="center" flexDirection={"column"}>
+                <Button  style={{position:"absolute", right:"10%",top:"5%",marginBottom:"25%",background:"black",color:"white"}} onClick={handleClose}>
                             x
                         </Button>
                 <Box style={{border:"10x solid white",width:"90%",height:"90%",padding:"10%"}}>
