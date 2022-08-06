@@ -512,7 +512,9 @@ const Home = (props: HomeProps) => {
             padding: 24,
             paddingBottom: 10,
             // backgroundColor: '#151A1F',
-            backgroundColor: 'rgba(124,23,52,0.1)',
+            // backgroundColor: 'rgba(124,23,52,0.1)',
+            backgroundColor:"black",
+            color:"white",
             borderRadius: 6,
           }}
         >
@@ -528,7 +530,7 @@ const Home = (props: HomeProps) => {
                   wrap="nowrap"
                 >
                   <Grid item xs={3}>
-                    <Typography variant="body2" color="textSecondary">
+                    <Typography variant="body2" style={{color:"white"}}>
                       Remaining
                     </Typography>
                     <Typography
@@ -538,19 +540,20 @@ const Home = (props: HomeProps) => {
                         fontWeight: 'bold',
                       }}
                     >
-                      {`${itemsRemaining}`}
+                      <div style={{color:"white"}}>
+                        {`${itemsRemaining}`}
+                      </div>
                     </Typography>
                   </Grid>
                   <Grid item xs={6}>
-                    <Typography variant="body2" color="textSecondary">
+                    <Typography variant="body2" style={{color:"white"}}>
                       {isWhitelistUser && discountPrice
                         ? 'Discount Price'
                         : 'Price'}
                     </Typography>
                     <Typography
                       variant="h6"
-                      color="textPrimary"
-                      style={{ fontWeight: 'bold' }}
+                      style={{ fontWeight: 'bold',color:"white" }}
                     >
                       {isWhitelistUser && discountPrice
                         ? `◎ ${formatNumber.asNumber(discountPrice)}`
@@ -565,7 +568,7 @@ const Home = (props: HomeProps) => {
                         <MintCountdown
                           key="endSettings"
                           date={getCountdownDate(candyMachine)}
-                          style={{ justifyContent: 'flex-end' }}
+                          style={{ justifyContent: 'flex-end',color:"white" }}
                           status="COMPLETED"
                           onComplete={toggleMintButton}
                         />
@@ -573,7 +576,7 @@ const Home = (props: HomeProps) => {
                           variant="caption"
                           align="center"
                           display="block"
-                          style={{ fontWeight: 'bold' }}
+                          style={{ fontWeight: 'bold',color:"white" }}
                         >
                           TO END OF MINT
                         </Typography>
@@ -583,7 +586,7 @@ const Home = (props: HomeProps) => {
                         <MintCountdown
                           key="goLive"
                           date={getCountdownDate(candyMachine)}
-                          style={{ justifyContent: 'flex-end' }}
+                          style={{ justifyContent: 'flex-end',color:"white" }}
                           status={
                             candyMachine?.state?.isSoldOut ||
                             (endDate && Date.now() > endDate.getTime())
@@ -602,7 +605,7 @@ const Home = (props: HomeProps) => {
                               variant="caption"
                               align="center"
                               display="block"
-                              style={{ fontWeight: 'bold' }}
+                              style={{ fontWeight: 'bold',color:"white" }}
                             >
                               UNTIL PUBLIC MINT
                             </Typography>
@@ -621,13 +624,13 @@ const Home = (props: HomeProps) => {
                   wrap="nowrap"
                 >
                   <Grid item xs={6}>
-                    <Typography variant="body2" color="textSecondary">
+                    <Typography variant="body2" style={{color:"white"}}>
                       {'Price'}
                     </Typography>
                     <Typography
                       variant="h6"
                       color="textPrimary"
-                      style={{ fontWeight: 'bold' }}
+                      style={{ fontWeight: 'bold',color:"white" }}
                     >
                       {isWhitelistUser && discountPrice
                         ? `◎ ${formatNumber.asNumber(discountPrice)}`

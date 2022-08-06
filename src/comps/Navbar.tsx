@@ -173,14 +173,14 @@ const Navbar = () => {
                                         </Button>
                                 </ListItemButton>
                         </ListItem>
-                        <ListItem disablePadding href="https://somespace.fra1.cdn.digitaloceanspaces.com/dsnew.pdf" component="a" target={"_blank"}>
-                                <ListItemButton>
+                        {/* <ListItem disablePadding href="https://somespace.fra1.cdn.digitaloceanspaces.com/dsnew.pdf" component="a" target={"_blank"}>
+                                <ListItemButton> */}
                                         {/* <ListItemText primary="Magic Eden" /> */}
-                                        <Button variant="contained" size="medium" style={{fontSize:"18px",margin:3,background:"rgba(248,199,140,255)",color:"#cc0e52"}}>
+                                        {/* <Button variant="contained" size="medium" style={{fontSize:"18px",margin:3,background:"rgba(248,199,140,255)",color:"#cc0e52"}}>
                                                 Whitepaper
                                         </Button>
                                 </ListItemButton>
-                        </ListItem>
+                        </ListItem> */}
                         {/* <ListItem disablePadding>
                                 <ListItemButton>
                                         <Link to="/whitepaper"  style={{textDecoration:"none", color:"white"}}>

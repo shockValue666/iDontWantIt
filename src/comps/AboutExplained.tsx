@@ -15,7 +15,7 @@ function AboutExplained() {
         direction="row"
         justifyContent="space-around"
         alignItems="center"
-        alignContent="flex-start"
+        alignContent="center"
         flexWrap={"wrap"}
         rowGap="70px"
         width="70%"

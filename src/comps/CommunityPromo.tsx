@@ -5,7 +5,7 @@ import TwitterIcon from './svgs/TwitterIcon'
 
 function CommunityPromo() {
   return (
-    <div style={{marginTop:"10%",padding:"8%",backgroundImage:`url("https://somespace.fra1.digitaloceanspaces.com/Scientist%281%29%202.PNG")`,backgroundColor:"#cccccc"}}>
+    <div style={{marginTop:"3%",padding:"8%",backgroundImage:`url("https://somespace.fra1.digitaloceanspaces.com/Scientist%281%29%202.PNG")`,backgroundColor:"#cccccc"}}>
         {/* <img src="https://somespace.fra1.digitaloceanspaces.com/Scientist%281%29%202.PNG" alt=""  width={"500px"} height="500px"/> */}
         <h1 style={{color:"white",textAlign:"center", margin:"5%",fontWeight:"900",fontSize:"50px"}}>
             👁  join us 👁

@@ -14,7 +14,7 @@ function PreAppExport() {
         <Navbar/>
         {/* <ExampleNavbar/> */}
         <NewHome/>
-        <div style={{marginTop:"20%"}}>
+        <div style={{marginTop:"10%"}}>
           <div style={{marginTop:"2%"}}>
             <CardDefinition/>
           </div>
