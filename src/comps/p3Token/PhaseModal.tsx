@@ -18,8 +18,8 @@ function PhaseModal2() {
           <Link to="/roadmap" style={{textDecoration:"none",height:"100%",color:"white",fontSize:"56px"}} onClick={(e)=>{e.preventDefault();setOpen(true)}}>
               {/* <Button style={{flex:"auto",color:"white",background: "none",width:"100%",height:"100%" ,fontSize:"30px",alignSelf:"stretch"}} variant="contained" color={"primary"} onClick={()=>{setOpen(true)}}> */}
                   {/* p∫∫∫∫∫∫∫1 */}
-                  <div style={{display:"flex",height:"100%",alignItems:"center",justifyContent:"center",width:"100%",borderRadius:"5%"}}>
-                      DS Marketplace
+                  <div style={{display:"flex",height:"100%",alignItems:"center",justifyContent:"center",borderRadius:"5%"}}>
+                      mrktplc
                     </div>
               {/* </Button> */}
             </Link>
