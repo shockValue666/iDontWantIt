@@ -4,7 +4,7 @@ import React,{useState} from 'react'
 import PhaseAccordeon from './PhaseAccordeon';
 import {Link} from "react-router-dom";
 
-function PhaseModal2() {
+function PhaseModal3() {
     const [open,setOpen]=useState(false)
     const handleClose = () => {
       setOpen(false)
@@ -32,4 +32,4 @@ function PhaseModal2() {
   )
 }
 
-export default PhaseModal2
+export default PhaseModal3
