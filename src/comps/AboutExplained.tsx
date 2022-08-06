@@ -19,7 +19,7 @@ function AboutExplained() {
         flexWrap={"wrap"}
         rowGap="70px"
         width="70%"
-        style={{border:""}}
+        style={{border:"10px solid green"}}
         >
 
           <Box
