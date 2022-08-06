@@ -12,7 +12,7 @@ function PhaseModal() {
     <div>
         {/* <div style={{display:"flex",flexDirection:"column",width:"100%",textAlign:"center",height:"256px"}}> */}
         <div style={{display:"flex",flexDirection:"column",width:"100%",textAlign:"center",height:"288px"}}>
-          <Link to="/roadmap/#" style={{textDecoration:"none",height:"100%",color:"white",fontSize:"56px"}}>
+          <Link to="/roadmap/" style={{textDecoration:"none",height:"100%",color:"white",fontSize:"56px"}}>
               {/* <Button style={{flex:"auto",color:"white",background: "none",width:"100%",height:"100%" ,fontSize:"30px",alignSelf:"stretch"}} variant="contained" color={"primary"} onClick={()=>{setOpen(true)}}> */}
                   {/* p∫∫∫∫∫∫∫1 */}
                   <div style={{display:"flex",height:"100%",alignItems:"center",justifyContent:"center",width:"100%",borderRadius:"5%"}}>

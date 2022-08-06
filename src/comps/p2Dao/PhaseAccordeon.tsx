@@ -23,10 +23,10 @@ function PhaseAccordeon({handleClose}:any) {
     <ThemeProvider theme={theme}>
         <Grid container spacing={5}  height="90vh" width="70vw">
             <Grid sx={{border:"2px solid black",background:"#826882",overflow:"hidden"}}  item xs={12} sm={12}>
-                    <Box padding="8%">
-                        <Button variant="contained" style={{position:"absolute", right:"10%",marginBottom:"12%"}} onClick={handleClose}>
+                <Button  style={{position:"absolute", right:"10%",top:"5%",marginBottom:"12%",background:"black",color:"white"}} onClick={handleClose}>
                             x
                         </Button>
+                    <Box padding="8%">
                         <Typography component="h1" style={{fontSize:"48px",marginBottom:"10%"}}>
                             ds dao
                         </Typography>
