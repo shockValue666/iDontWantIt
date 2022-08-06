@@ -34,7 +34,7 @@ function AboutExplained() {
                 backgroundColor: 'primary',
                 opacity: [0.9, 0.8, 0.7],
               },
-              // borderRadius:"1%" ,
+              borderRadius:"2%" ,
               margin:"2%"
             }}
           >
@@ -64,7 +64,7 @@ function AboutExplained() {
                 </Typography> 
             </Container>
             </Box>
-          <Box
+          {/* <Box
             sx={{
               width: 300,
               height: 300,
@@ -84,7 +84,27 @@ function AboutExplained() {
                   <PhaseModal3/>
                 </Typography> 
             </Container>
-          </Box>
+          </Box> */}
+          <Box
+            sx={{
+              width: 300,
+              height: 300,
+              background: "radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(95,9,121,1) 50%, rgba(255,0,142,1) 100%)",
+              padding:"15px",
+              '&:hover': {
+                backgroundColor: 'primary',
+                opacity: [0.9, 0.8, 0.7],
+              },
+              borderRadius:"2%",
+              margin:"2%"
+            }}
+          >
+            <Container>
+                <Typography variant="h3">
+                    <PhaseModal2/>
+                </Typography> 
+            </Container>
+            </Box>
 
             <Box
             sx={{
