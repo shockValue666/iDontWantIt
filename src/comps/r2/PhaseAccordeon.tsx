@@ -59,7 +59,7 @@ function PhaseAccordeon({handleClose}:any) {
                         </Typography>
                     </Box>
             </Grid>
-            <Grid sx={{border:"2px solid black",display:{xs:"none",sm:"block"}}}  item xs={0} sm={4}>
+            <Grid sx={{border:"2px solid black",display:{xs:"none",sm:"block",backgroundImage:"url(https://somespace.fra1.digitaloceanspaces.com/Laboratorium%20%281%292.jpeg)",backgroundSize:"cover",backgroundPosition:"center center"}}}  item xs={0} sm={4}>
                     mikri
             </Grid> 
         </Grid>

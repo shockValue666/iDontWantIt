@@ -25,7 +25,7 @@ function PhaseAccordeon({handleClose}:any) {
                 <Button  style={{position:"absolute", right:"10%",top:"5%",marginBottom:"25%",background:"black",color:"white"}} onClick={handleClose}>
                             x
                         </Button>
-                <Box style={{border:"10x solid white",width:"90%",height:"90%",padding:"10%"}}>
+                <Box padding="8%">
                     <Typography component="h1" style={{fontSize:"30px",marginBottom:"10%"}}>
                         $ds
                     </Typography>
