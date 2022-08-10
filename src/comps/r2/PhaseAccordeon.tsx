@@ -46,16 +46,16 @@ function PhaseAccordeon({handleClose}:any) {
                             p ∫∫∫∫∫ 2
                         </Typography>
                         <Typography variant="h5" padding="5%">
-                            someshit about the first phase which is going to be 
+                            -- token mint szn
                         </Typography>
                         <Typography variant="body1" padding="6%">
-                            -- some more shit about the first phase
+                            -- deploy staking contract in order to begin the mint of $TKNX
                         </Typography>
                         <Typography variant="body1" padding="6%">
-                            -- some other shit about the first phase
+                            -- create a pair on a liquidity pool
                         </Typography>
                         <Typography variant="body1" padding="6%">
-                            -- you know what i mean
+                            -- special offers for native spl-token holders
                         </Typography>
                     </Box>
             </Grid>

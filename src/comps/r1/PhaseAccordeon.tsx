@@ -43,16 +43,16 @@ function PhaseAccordeon({handleClose}:any) {
                             p ∫∫∫∫∫ 1
                         </Typography>
                         <Typography variant="h5" padding="5%">
-                            someshit about the first phase which is going to be 
+                            The beggining
                         </Typography>
                         <Typography variant="body1" padding="6%">
-                            -- some more shit about the first phase
+                            -- build our social media presence
                         </Typography>
                         <Typography variant="body1" padding="6%">
-                            -- some other shit about the first phase
+                            -- collaborate with DAOs and communities
                         </Typography>
                         <Typography variant="body1" padding="6%">
-                            -- you know what i mean
+                            -- Giveways for discord/twitter community
                         </Typography>
                     </Box>
             </Grid>

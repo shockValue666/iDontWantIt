@@ -5,13 +5,13 @@ import TypeWritter from './TypeWriter'
 
 function MintButtonWrapper({children}:any) {
   return (
-    <div style={{border:"2px solid black",display:"flex",justifyContent:"center",backgroundImage:"url(https://somespace.fra1.digitaloceanspaces.com/Laboratorium%20%281%292.jpeg)",backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
-            <Grid container spacing={2} height="750px" padding={5} >
+    <div style={{border:"2px solid black",display:"flex",justifyContent:"center",alignItems:"center",backgroundImage:"url(https://somespace.fra1.digitaloceanspaces.com/Laboratorium%20%281%292.jpeg)",backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
+            <Grid container spacing={2} height="750px" padding={5}  >
                 <Grid item xs={1} >
                 </Grid>
-                <Grid item xs={10}>
+                <Grid item xs={10} >
                     {/* <Box sx={{border:"10px solid white",backgroundImage:"url(https://via.placeholder.com/728x900.png)"}} maxWidth="md" width="100%" height="100%" textAlign={"center"}> */}
-                    <Box  maxWidth="md" width="100%" height="100%" textAlign={"center"}>
+                    <Box  maxWidth="lg" width="100%" height="100%" textAlign={"center"}>
                         {/* <a href="https://placeholder.com"> <img src="https://via.placeholder.com/550" alt="p" /> </a> */}
                           <TypeWritter/>
                         {children}

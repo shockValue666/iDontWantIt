@@ -4,8 +4,8 @@ function DiscordIcon({className}:any) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="88"
-      height="88"
+      width="150"
+      height="150"
       preserveAspectRatio="xMidYMid"
       viewBox="0 -28.5 256 256"
       className={className}
