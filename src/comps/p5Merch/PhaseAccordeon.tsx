@@ -40,7 +40,7 @@ function PhaseAccordeon({handleClose}:any) {
                         <ListItem disablePadding>
                             <ListItemButton>
                             <ListItemIcon>
-                                <AccountBalance style={{fontSize:"30px"}}/>
+                                <AccountBalance style={{fontSize:"30px",color:"white"}}/>
                             </ListItemIcon>
                             {/* <ListItemText primary="Inbox"  style={{fontSize:"28px",fontWeight:"600",color:"rgba(52, 235, 177,1)"}}/> */}
                             <p style={{fontSize:"28px",fontWeight:"600",background:"rgba(248,199,140,255)",color:"#cc0e52"}}>as soon as the public mint ends we the staking website will be released</p>
@@ -53,7 +53,7 @@ function PhaseAccordeon({handleClose}:any) {
                         <ListItem disablePadding>
                             <ListItemButton>
                             <ListItemIcon>
-                                <AccountBalanceWallet style={{fontSize:"30px"}}/>
+                                <AccountBalanceWallet style={{fontSize:"30px",color:"white"}}/>
                             </ListItemIcon>
                             {/* <ListItemText primary="Inbox"  style={{fontSize:"28px",fontWeight:"600",color:"rgba(52, 235, 177,1)"}}/> */}
                             <p style={{fontSize:"28px",fontWeight:"600",color:"white",background:"rgba(201,55,173,255)"}}>1 ds will earn <span style={{fontSize:"32px",fontWeight:"700",color:"rgba(52, 235, 177,1)"}}>0.1 $ds/day</span>  locked for 1 day</p>
@@ -62,7 +62,7 @@ function PhaseAccordeon({handleClose}:any) {
                         <ListItem disablePadding>
                             <ListItemButton>
                             <ListItemIcon>
-                                <AccountBalanceWallet style={{fontSize:"30px"}}/>
+                                <AccountBalanceWallet style={{fontSize:"30px",color:"white"}}/>
                             </ListItemIcon>
                             {/* <ListItemText primary="Inbox"  style={{fontSize:"28px",fontWeight:"700",color:"rgba(52, 235, 177,1)"}}/> */}
                             <p style={{fontSize:"28px",fontWeight:"600",color:"white",background:"rgba(201,55,173,255)"}}>1 ds will earn 0.2 <span style={{fontSize:"32px",fontWeight:"700",color:"rgba(52, 235, 177,1)"}}>0.2 $ds/day</span> locked for 1 week</p>
@@ -71,7 +71,7 @@ function PhaseAccordeon({handleClose}:any) {
                         <ListItem disablePadding>
                             <ListItemButton>
                             <ListItemIcon>
-                                <AccountBalanceWallet style={{fontSize:"30px"}}/>
+                                <AccountBalanceWallet style={{fontSize:"30px",color:"white"}}/>
                             </ListItemIcon>
                             {/* <ListItemText primary="Inbox"  style={{fontSize:"28px",fontWeight:"700",color:"rgba(52, 235, 177,1)"}}/> */}
                             <p style={{fontSize:"28px",fontWeight:"600",color:"white",background:"rgba(201,55,173,255)"}}>1 ds will earn <span style={{fontSize:"32px",fontWeight:"700",color:"rgba(52, 235, 177,1)"}}>0.3 $ds/day</span> locked for 1 month</p>
