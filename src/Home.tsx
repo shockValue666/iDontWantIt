@@ -505,7 +505,7 @@ const Home = (props: HomeProps) => {
   }, [refreshCandyMachineState]);
 
   return (
-    <Container style={{ marginTop: 100 }}>
+    <Container style={{ marginTop: 100, minWidth:"500px" }}>
       <Container maxWidth="xs" style={{ position: 'relative', }}>
         <Paper
           style={{
