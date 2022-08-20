@@ -27,7 +27,7 @@ function MintButtonWrapper({children}:any) {
                     {/* <Box sx={{border:"10px solid white",backgroundImage:"url(https://via.placeholder.com/728x900.png)"}} maxWidth="md" width="100%" height="100%" textAlign={"center"}> */}
                     <Box  maxWidth="lg" width="100%" height="100%" textAlign={"center"}>
                         {/* <a href="https://placeholder.com"> <img src="https://via.placeholder.com/550" alt="p" /> </a> */}
-                        <div style={{minWidth:"0px"}}>
+                        <div style={{minWidth:"450px"}}>
                           <TypeWritter/>
                         </div>
                         {children}
