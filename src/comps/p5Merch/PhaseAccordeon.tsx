@@ -22,7 +22,7 @@ function PhaseAccordeon({handleClose}:any) {
 
   return (
     <ThemeProvider theme={theme}>
-        <Grid container style={{height:"90vh", width:"90vw"}}>
+        <Grid container style={{height:"90vh", width:"80vw"}}>
             {/* <Grid sx={{background:"#826882"}}  item xs={12} sm={12} justifyContent="center" alignItems="center" flexDirection={"column"}> */}
             <Grid sx={{background:"black"}}  item xs={12} sm={12} justifyContent="center" alignItems="center" flexDirection={"column"}>
                 <Button  style={{position:"absolute", right:"10%",top:"5%",marginBottom:"25%",background:"white",color:"black"}} onClick={handleClose}>

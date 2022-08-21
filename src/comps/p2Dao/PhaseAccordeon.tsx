@@ -1,5 +1,6 @@
 // import { Box,Grid,styled,ThemeProvider,Typography } from '@mui/material'
-import { Box,Button,Grid,ThemeProvider, Typography } from '@mui/material'
+import { AccountBalance, AccountBalanceWallet } from '@mui/icons-material'
+import { Button,Grid,List,ListItem,ListItemButton,ListItemIcon,ThemeProvider, Typography } from '@mui/material'
 import React,{useEffect,useState} from 'react'
 import {theme} from "../styles"
 
@@ -26,7 +27,7 @@ function PhaseAccordeon({handleClose}:any) {
                 <Button  style={{position:"absolute", right:"10%",top:"5%",marginBottom:"12%",background:"black",color:"white"}} onClick={handleClose}>
                             x
                         </Button>
-                    <Box padding="8%">
+                    {/* <Box padding="8%">
                         <Typography component="h1" style={{fontSize:"48px",marginBottom:"10%"}}>
                             ds dao
                         </Typography>
@@ -41,7 +42,56 @@ function PhaseAccordeon({handleClose}:any) {
                         <Typography component="p" style={{fontSize:"20px", paddingLeft:"1%",paddingBottom:"2%"}}>
                             x% of the mint revenue will be locked in the DAO treasury and the community will decide how it will be spent
                         </Typography>
-                    </Box>
+                    </Box> */}
+                    <Typography component="h1" style={{fontSize:"30px",marginBottom:"10%"}}>
+                        ds DAO
+                    </Typography>
+
+                    {/* <Typography component="p" style={{fontSize:"27px",fontWeight:"600",background:"rgba(248,199,140,255)",color:"#cc0e52"}}>
+                         as soon as the public mint ends we the staking website will be released
+                    </Typography> */}
+                     <List>
+                        <ListItem disablePadding>
+                            <ListItemButton>
+                            <ListItemIcon>
+                                <AccountBalance style={{fontSize:"30px",color:"white"}}/>
+                            </ListItemIcon>
+                            {/* <ListItemText primary="Inbox"  style={{fontSize:"28px",fontWeight:"600",color:"rgba(52, 235, 177,1)"}}/> */}
+                            <p style={{fontSize:"28px",fontWeight:"600",background:"rgba(248,199,140,255)",color:"#cc0e52"}}>as soon as the public mint ends we the staking website will be released</p>
+                            </ListItemButton>
+                        </ListItem>
+                    </List>
+                    <br />
+                    <br />
+                    <List>
+                        <ListItem disablePadding>
+                            <ListItemButton>
+                            <ListItemIcon>
+                                <AccountBalanceWallet style={{fontSize:"30px",color:"white"}}/>
+                            </ListItemIcon>
+                            {/* <ListItemText primary="Inbox"  style={{fontSize:"28px",fontWeight:"600",color:"rgba(52, 235, 177,1)"}}/> */}
+                            <p style={{fontSize:"28px",fontWeight:"600",color:"white",background:"rgba(201,55,173,255)"}}>1 ds will earn <span style={{fontSize:"32px",fontWeight:"700",color:"rgba(52, 235, 177,1)"}}>0.1 $ds/day</span>  locked for 1 day</p>
+                            </ListItemButton>
+                        </ListItem>
+                        <ListItem disablePadding>
+                            <ListItemButton>
+                            <ListItemIcon>
+                                <AccountBalanceWallet style={{fontSize:"30px",color:"white"}}/>
+                            </ListItemIcon>
+                            {/* <ListItemText primary="Inbox"  style={{fontSize:"28px",fontWeight:"700",color:"rgba(52, 235, 177,1)"}}/> */}
+                            <p style={{fontSize:"28px",fontWeight:"600",color:"white",background:"rgba(201,55,173,255)"}}>1 ds will earn 0.2 <span style={{fontSize:"32px",fontWeight:"700",color:"rgba(52, 235, 177,1)"}}>0.2 $ds/day</span> locked for 1 week</p>
+                            </ListItemButton>
+                        </ListItem>
+                        <ListItem disablePadding>
+                            <ListItemButton>
+                            <ListItemIcon>
+                                <AccountBalanceWallet style={{fontSize:"30px",color:"white"}}/>
+                            </ListItemIcon>
+                            {/* <ListItemText primary="Inbox"  style={{fontSize:"28px",fontWeight:"700",color:"rgba(52, 235, 177,1)"}}/> */}
+                            <p style={{fontSize:"28px",fontWeight:"600",color:"white",background:"rgba(201,55,173,255)"}}>1 ds will earn <span style={{fontSize:"32px",fontWeight:"700",color:"rgba(52, 235, 177,1)"}}>0.3 $ds/day</span> locked for 1 month</p>
+                            </ListItemButton>
+                        </ListItem>
+                    </List>
             </Grid>
             {/* <Grid sx={{border:"2px solid black",display:{xs:"none",sm:"block"}}}  item xs={0} sm={4}>
                     mikri
