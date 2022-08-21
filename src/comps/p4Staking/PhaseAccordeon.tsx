@@ -1,5 +1,6 @@
 // import { Box,Grid,styled,ThemeProvider,Typography } from '@mui/material'
-import { Box,Button,Grid,ThemeProvider, Typography } from '@mui/material'
+import { Checkroom,Paid } from '@mui/icons-material'
+import { Box,Button,Grid,List,ListItem,ListItemButton,ListItemIcon,ThemeProvider, Typography } from '@mui/material'
 import React,{useEffect,useState} from 'react'
 import {theme} from "../styles"
 
@@ -20,22 +21,56 @@ function PhaseAccordeon({handleClose}:any) {
 
   return (
     <ThemeProvider theme={theme}>
-        <Grid container spacing={5} style={{height:"90vh", width:"90vw",background:"#826882"}}>
-            <Grid sx={{border:"2px solid black",background:"#826882",height:"90vh"}}  item xs={12} sm={12}>
-                <Button  style={{position:"absolute", right:"10%",top:"5%",marginBottom:"12%",background:"black",color:"white"}} onClick={handleClose}>
+        <Grid container style={{height:"90vh", width:"80vw"}}>
+            {/* <Grid sx={{background:"#826882"}}  item xs={12} sm={12} justifyContent="center" alignItems="center" flexDirection={"column"}> */}
+            <Grid sx={{background:"black"}}  item xs={12} sm={12} justifyContent="center" alignItems="center" flexDirection={"column"}>
+                <Button  style={{position:"absolute", right:"10%",top:"5%",marginBottom:"25%",background:"white",color:"black"}} onClick={handleClose}>
                             x
                         </Button>
                 <Box padding="8%">
                     <Typography component="h1" style={{fontSize:"30px",marginBottom:"10%"}}>
-                        merch
+                        $ds
                     </Typography>
 
-                    <Typography component="p" style={{fontSize:"20px"}}>
-                        we will release merch which will be sold using $ds 
-                    </Typography>
-                    <Typography component="p" style={{fontSize:"20px"}}>
-                        2.5% transaction fees will be burned and 2.5% will be added to our DAO treasury.
-                    </Typography>
+                    {/* <Typography component="p" style={{fontSize:"27px",fontWeight:"600",background:"rgba(248,199,140,255)",color:"#cc0e52"}}>
+                         as soon as the public mint ends we the staking website will be released
+                    </Typography> */}
+                     <List>
+                        <ListItem disablePadding>
+                            <ListItemButton>
+                            <ListItemIcon>
+                                <Checkroom style={{fontSize:"30px",color:"white"}}/>
+                            </ListItemIcon>
+                            {/* <ListItemText primary="Inbox"  style={{fontSize:"28px",fontWeight:"600",color:"rgba(52, 235, 177,1)"}}/> */}
+                            <p style={{fontSize:"28px",fontWeight:"600",background:"rgba(248,199,140,255)",color:"#cc0e52"}}>merch</p>
+                            </ListItemButton>
+                        </ListItem>
+                    </List>
+                    <br />
+                    <br />
+                    <List>
+                        <ListItem disablePadding>
+                            <ListItemButton>
+                            <ListItemIcon>
+                                <Paid style={{fontSize:"30px",color:"white"}}/>
+                            </ListItemIcon>
+                            {/* <ListItemText primary="Inbox"  style={{fontSize:"28px",fontWeight:"600",color:"rgba(52, 235, 177,1)"}}/> */}
+                            <p style={{fontSize:"28px",fontWeight:"600",color:"white",background:"rgba(201,55,173,255)"}}>we will release merch which will be sold using $ds</p>
+                            </ListItemButton>
+                        </ListItem>
+                        <ListItem disablePadding>
+                            <ListItemButton>
+                            <ListItemIcon>
+                                <Paid style={{fontSize:"30px",color:"white"}}/>
+                            </ListItemIcon>
+                            {/* <ListItemText primary="Inbox"  style={{fontSize:"28px",fontWeight:"700",color:"rgba(52, 235, 177,1)"}}/> */}
+                            <p style={{fontSize:"28px",fontWeight:"600",color:"white",background:"rgba(201,55,173,255)"}}> 2.5% transaction fees will be burned and 2.5% will be added to our DAO treasury.</p>
+                            </ListItemButton>
+                        </ListItem>
+                    </List>
+                    <div style={{paddingTop:"5%",paddingBottom:"5%"}}>
+
+                    </div>
                 </Box>
             </Grid>
             {/* <Grid sx={{border:"2px solid black",display:{xs:"none",sm:"block"}}}  item xs={0} sm={6}>
@@ -47,3 +82,4 @@ function PhaseAccordeon({handleClose}:any) {
 }
 
 export default PhaseAccordeon
+
